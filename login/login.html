@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../images/LogoSealCoffee.png"> <!--CAMBIAR-->
+    <link rel="stylesheet" href="login.css"> <!--CAMBIAR-->
+    <script defer src="https://app.embed.im/snow.js"></script>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="header">
+
+        <div class="menu container" id="principio">
+
+            <figure>
+                <a href="../página Uno/index.html"><img src="../images/Logo Seal Coffee.png" alt="LogoSealCoffee"></a>
+            </figure> <!--CAMBIAR UBICACION EN EL PROYECTO ORIGINAL-->
+
+        </div>
+
+    </header>
+
+
+    <!--LOGIN-->
+    <div id="login-form" class="login-box">
+
+        <img class="icon" src="../images/SealCoffeeiCono.png" alt="Logo Cafe"> <!--CAMBIAR-->
+
+        <h1>Inicia Sesión</h1>
+
+        <input type="email" id="login-email" placeholder="Ingrese email" required />
+        <input type="password" id="login-password" placeholder="Ingrese contraseña" required />
+        <button onclick="login()" id="login-boton">Iniciar Sesión</button>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="recuerdame">
+            <label for="remember-me">Recuérdame</label>
+        </div>
+
+        <p>
+            <a href="#" id="nopassword">¿Olvidó su contraseña?</a>
+            <br>
+            <a href="#" onclick="showRegisterForm()">Registrate aquí</a>
+        </p>
+    </div>
+
+    <!--REGISTRO-->
+    <div id="register-form" class="login-box" style="display: none;">
+
+        <img class="icon" src="../images/SealCoffeeiCono.png" alt="Logo Cafe"> <!--CAMBIAR-->
+
+        <h1>Registro</h1>
+
+        <input type="email" id="register-email" placeholder="Ingrese email" required />
+        <input type="password" id="register-password" placeholder="Ingrese contraseña" required />
+        <button onclick="register()">Registrarse</button>
+        <p>
+            ¿Ya tienes una cuenta?
+            <br>
+            <a href="#" onclick="showLoginForm()">Iniciar Sesión</a>
+        </p>
+    </div>
+
+    <!--Footer 2-->
+    <footer>
+        <p><a href="../página Uno/index.html#contactos">Información de contacto</a> | Términos de uso | Política de
+            privacidad</p>
+        <p>© 2024 SealCoffee. Todos los derechos reservados.</p> <!--CAMBIAR->
+    </footer>
+
+    <!- Firebase Scripts, Firebase App (solo es necesario una vez)-->
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <!-- Firebase Authentication -->
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+        <script src="/auth.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- <script src="../login/login.js"></script> CAMBIAR -->
+
+</body>
+
+</html>

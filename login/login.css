@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body{
+    margin: 0;
+    background: url(../images/coffee-header.jpg) no-repeat center top; /*CAMBIAR*/
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    padding-bottom: 80px;
+}
+
+/*Propiedad SS*/
+html {
+    scroll-behavior: smooth;
+}
+
+figure img {
+    width: 240px;
+    height: 200px;
+    position:absolute;
+    cursor: pointer;
+    top: -1;
+    left: 0;
+    margin-top: -25px;
+}
+
+.login-box{
+    width: 380px;
+    height: 460px;
+    background: #0f0f0f;
+    color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 80px 30px;
+    box-shadow: 0px 0px 10px rgba(193, 224, 15, 0.1);
+}
+
+.login-box .icon {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -90px;
+    left: calc(50% - 90px);
+}
+
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 25px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: rgb(25, 25, 190);
+    color: white;
+    font-size: 23px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(57, 57, 138);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin: 0 -140px 0 -150px;
+}
+
+.checkbox-container label {
+    font-size: 14px;
+    margin: 0;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgb(199, 196, 196);
+}
+
+.login-box a:hover{
+    color: #FFFFFF;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Responsive 991*/
+@media(max-width:768px) {
+
+    figure img {
+        padding: 5px;
+        max-height: 70px;
+        max-width: 50px;
+    }
+
+    .login-box .icon{
+        max-width: 60%;
+    }
+
+    .login-box h1{
+        font-size: 20px;
+        padding: 50px 0;
+    }
+
+    .login-box input {
+        width: 90%;
+    }
+
+    .login-box {
+        width: 80%; /* Reduce el ancho en pantallas pequeñas */
+        padding: 15px; /* Menos padding */
+    }
+
+    button {
+        padding: 8px; /* Botón más pequeño */
+    }
+    
+    input[type="text"], input[type="password"] {
+        padding: 8px; /* Campos de entrada más pequeños */
+    }
+
+    .checkbox-container {
+        padding: 0 5px 0 240px;
+    }
+
+    label {
+        padding: 1px;
+    }
+    
+    footer {
+        font-size: 12px; /* Fuente más pequeña en el footer */
+        padding: 8px 0;
+    }
+
+}
+
+/*@media(max-width:480px) {
+
+    figure img {
+        padding: 5px;
+        max-height: 50px;
+        max-width: 40px;
+    }
+
+    .login-box .icon{
+        max-width: 50%;
+    }
+
+    .login-box h1{
+        font-size: 15px;
+        padding: 40px 0;
+    }
+
+    .login-box input {
+        width: 70%;
+    }
+
+    .login-box {
+        width: 100%; /* Reduce el ancho en pantallas pequeñas 
+        padding: 10px; /* Menos padding *
+        max-width: none;
+    }
+
+    button {
+        padding: 6px; /* Botón más pequeño 
+    }
+    
+    input[type="text"], input[type="password"] {
+        padding: 6px; /* Campos de entrada más pequeños 
+    }
+
+    .checkbox-container {
+        padding: 0 5px 0 240px;
+    }
+
+    label {
+        padding: 1px;
+    }
+    
+    footer {
+        font-size: 10px; /* Fuente más pequeña en el footer 
+        padding: 5px 0;
+    }
+
+}*/

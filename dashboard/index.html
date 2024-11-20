@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seal Coffee</title>
+    <link rel="stylesheet" href="../estilo/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../images/SealCoffeeiCono.png">
+    <script defer src="https://app.embed.im/snow.js"></script>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="header">
+
+        <div class="menu container" id="principio">
+
+            <figure>
+                <a href="#somos"><img src="../images/Logo Seal Coffee.png" alt="LogoSealCoffee" width="220" height="180"
+                        style="cursor: pointer;" /></a>
+            </figure>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="../images/menu.png" class="menu-icono" alt="">
+            </label>
+
+            <nav class="navebar">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contactos">Contactos</a></li>
+                    <li><a href="../login/login.html" id="btn-login" style="display: none;">Iniciar sesión</a></li>
+                    <li><a href="#" id="btn-logout" style="display: none;" onclick="logout()">Cerrar sesión</a></li>
+
+                </ul>
+
+            </nav>
+            <div>
+
+                <ul>
+                    <li class="submenu">
+                        <img src="../images/car.svg" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                            <a href="#" id="total-carrito" class="btn-3">Total:</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Todos tus Café Favoritos</h1>
+                <p>
+                    SOMOS EL LUGAR DONDE LOS AROMAS Y SABORES SE FUSIONAN PARA CREAR MOMENTOS INOLVIDABLES.
+                    <br>Tu experiencia en Seal Coffee es mucho más que una taza de café; es una invitación a explorar y
+                    deleitarte en una variedad de sabores que te harán volver por más.
+                    ¡Esperamos verte pronto en Café Delicioso, donde la pasión por el café y la diversidad de sabores se
+                    encuentran en cada sorbo!
+                </p>
+
+                <a class="btn-1" href="http://localhost/Reservas/" target="_blank">Reservaciones</a>
+
+            </div>
+
+    </header>
+
+    <!--Iconos1-->
+    <section class="icons">
+
+        <div class="icon">
+            <img src="../images/i5.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i9.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i7.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i5.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i9.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i7.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i5.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i9.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i7.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i5.svg" alt="">
+        </div>
+
+    </section>
+
+    <!--AVISO DESARROLLO-->
+    <section class="construccion" id="construccion">
+
+        <!--Smooth Scroll-->
+        <h2 class="construccion">
+            Disclaimer: Este proyecto se encuentra en Desarrollo.
+        </h2>
+
+    </section>
+
+    <!--Productos-->
+    <section class="products container" id="lista-1">
+
+        <!--Smooth scroll-->
+        <h2 id="productos">Café</h2>
+
+        <div class="products-content">
+
+            <div class="card">
+                <div class="product">
+                    <img src="../images/1. Cespressooo.png" alt="" class="imagen_container">
+                    <div class="product-txt">
+                        <h3>Café Espresso</h3>
+                        <p>Café Solo</p>
+                        <p class="precio">$5.000</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product">
+                    <img src="../images/6. Mocha o Vienes.png" alt="" class="imagen_container">
+                    <div class="product-txt">
+                        <h3>Café Mocha - Vienes</h3>
+                        <p>Café con chocolate, leche y espuma</p>
+                        <p class="precio">$10.000</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product">
+                    <img src="../images/2. Macchiato.png" alt="" class="imagen_container">
+                    <div class="product-txt">
+                        <h3>Café Macchiato</h3>
+                        <p>Café con espuma</p>
+                        <p class="precio">$8.000</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product">
+                    <img src="../images/4. Cafe Con Leche.png" alt="" class="imagen_container">
+                    <div class="product-txt">
+                        <h3>Café con Leche</h3>
+                        <p>Mitad café, mitad leche</p>
+                        <p class="precio">$3.500</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product">
+                    <img src="../images/5. Cappuchino.png" alt="" class="imagen_container">
+                    <div class="product-txt">
+                        <h3>Café Cappuchino</h3>
+                        <p>Café con mucha leche y poca espuma</p>
+                        <p class="precio">$8.000</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product">
+                    <img src="../images/3. Espresso Panna.png" alt="" class="imagen_container">
+                    <div class="product-txt">
+                        <h3>Café Espresso-Panna</h3>
+                        <p>Café con crema batida</p>
+                        <p class="precio">$9.000</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product">
+                    <img src="../images/7. Irlandés.png" alt="" class="imagen_container">
+                    <div class="product-txt">
+                        <h3>Café Irlandés</h3>
+                        <p>Café con whiskey y crema batida</p>
+                        <p class="precio">$19.000</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product">
+                    <img src="../images/8. Caribeño.png" alt="" class="imagen_container">
+                    <div class="product-txt">
+                        <h3>Café Caribeño</h3>
+                        <p>Café con ron, azúcar rubia y vainilla</p>
+                        <p class="precio">$16.000</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product">
+                    <img src="../images/9. Hawaiano.png" alt="" class="imagen_container">
+                    <div class="product-txt">
+                        <h3>Café Hawaiano</h3>
+                        <p>Café con leche de coco</p>
+                        <p class="precio">$17.500</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="9">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product">
+                    <img src="../images/10. Submarino.png" alt="" class="imagen_container">
+                    <div class="product-txt">
+                        <h3>Café Submarino</h3>
+                        <p>Leche con una barra de chocolate</p>
+                        <p class="precio">$18.000</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="10">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product">
+                    <img src="../images/11. frappee.png" alt="" class="imagen_container">
+                    <div class="product-txt">
+                        <h3>Café Frappé</h3>
+                        <p>Café con leche, hielo, sirope y nata montada</p>
+                        <p class="precio">$14,000</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="11">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product">
+                    <img src="../images/12. arabe.png" alt="" class="imagen_container">
+                    <div class="product-txt">
+                        <h3>Café Árabe</h3>
+                        <p>Café con especias</p>
+                        <p class="precio">$8.500</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="12">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!--Cierra Div Contenedor-->
+    </section>
+
+
+    <!--Servicios-->
+    <section class="services">
+        <!--Smooth scroll-->
+        <h2 id="servicios">Servicios</h2>
+
+        <div class="services-content container">
+
+            <div class="service">
+                <h3>Bebidas Frías </h3>
+                <hr>
+                <p>
+                    Cuando el calor del día se hace sentir, tenemos la solución perfecta. Desde refrescantes
+                    frappuccinos hasta suaves cafés helados, nuestras bebidas frías te mantendrán hidratado y satisfecho
+                    mientras disfrutas del inconfundible sabor del café.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Bebidas Calientes</h3>
+                <hr>
+                <p>
+                    Comenzamos con la esencia del café, utilizando granos cuidadosamente seleccionados y métodos de
+                    preparación artesanales para servirte las tazas más reconfortantes de café espresso, cappuccino, y
+                    café americano.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Bebidas Alcohólicas </h3>
+                <hr>
+                <p>
+                    ¿Buscas algo más atrevido? Nuestra carta de bebidas alcohólicas combina la sofisticación de los
+                    cócteles con la calidez del café. Desde Irish Coffee hasta Espresso Martini, tenemos una selección
+                    de bebidas que te invitan a relajarte y disfrutar en buena compañía.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Bebidas Lácteas</h3>
+                <hr>
+                <p>
+                    Para los amantes de la suavidad, ofrecemos una gama de bebidas lácteas que te envolverán en una capa
+                    de confort. Desde lattes con sabores únicos hasta el clásico café con leche, nuestras opciones
+                    lácteas son perfectas para aquellos que buscan un toque de indulgencia.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--Historia-->
+    <section class="questions">
+        <!--Smooth Scrolling-->
+        <h2 id="somos">¿Quienes Somos?</h2>
+
+        <div class="questions-content">
+
+            <div class="question">
+                <h3>Nacimiento</h3>
+                <hr>
+                <p>
+                    En las profundas y misteriosas montañas de Colombia, donde la niebla abraza los campos de café y el
+                    aroma a granos recién tostados flota en el aire, nació Seal Coffee. La historia de nuestra empresa
+                    está entrelazada con la riqueza de la tierra colombiana y la pasión por el café que se ha
+                    transmitido de generación en generación.
+
+                    Hace décadas, dos visionarios apasionados por el café, decidieron emprender un viaje por todo el
+                    país en busca de los granos más excepcionales. Su búsqueda lo llevó a lugares remotos donde las
+                    familias cultivaban cafetales con esmero y dedicación. Hasta que comprendieron que el café de
+                    Colombia tenía un potencial inmenso y que era crucial compartir su belleza con el mundo.
+
+                    Con el tiempo, una empresa que lleva las dos letras iniciales del nombre de sus creadores y este
+                    refleja nuestro compromiso con la calidad y la autenticidad en cada taza que servimos.
+
+                </p>
+            </div>
+
+            <div class="question">
+                <h3>Nuestra Historia</h3>
+                <hr>
+                <p>
+                    Seal Coffee es una empresa colombiana apasionada por el café de calidad. Nos enorgullece ofrecer una
+                    experiencia de café única y auténtica que refleja nuestra pasión por el café y nuestro compromiso
+                    con las comunidades locales y el medio ambiente.
+                    Hoy en día, Seal Coffee, sigue manteniendo viva la tradición de seleccionar los granos de café más
+                    finos y tostarlos con maestría. Nuestros granos provienen de las montañas colombianas, donde los
+                    agricultores locales cuidan cada cultivo con amor y pasión. Además, trabajamos en estrecha
+                    colaboración con estas comunidades para garantizar un comercio justo y sostenible.
+                </p>
+            </div>
+
+            <div class="question">
+                <h3>Misión</h3>
+                <hr>
+                <p>
+                    -Ofrecer café de alta calidad que capture la esencia de Colombia en cada taza.
+                    -Promover prácticas sostenibles en toda la cadena de suministro. <br> -Apoyar a las
+                    comunidades cafeteras locales a través de proyectos de desarrollo y educación.
+                    <br>-Contribuir a la preservación de los ecosistemas cafeteros de Colombia.
+                    Ofrecer café de alta calidad que capture la esencia de Colombia en cada taza.
+                    Promover prácticas sostenibles en toda la cadena de suministro. <br> Apoyar a las
+                    comunidades cafeteras locales a través de proyectos de desarrollo y educación.
+                    <br>Contribuir a la preservación de los ecosistemas cafeteros de Colombia
+                </p>
+            </div>
+
+            <div class="question">
+                <h3>Visión</h3>
+                <hr>
+                <p>
+                    En Seal Coffee, aspiramos a convertirnos en embajadores globales del café colombiano, destacando por
+                    nuestra calidad excepcional, compromiso con la sostenibilidad y contribución al bienestar de las
+                    comunidades cafeteras. Buscamos que cada taza de Seal Coffee sea una ventana abierta a las
+                    maravillas de Colombia, inspirando momentos de deleite y conexión en todo el mundo.
+
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--BOTÓN-->
+    <a href="#principio"><img src="../images/blue_button.png" id="botonArriba"></a>
+
+
+    <!--Iconos2-->
+    <section class="icons">
+
+        <div class="icon">
+            <img src="../images/i5.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i9.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i7.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i5.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i9.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i7.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i5.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i9.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i7.svg" alt="">
+        </div>
+        <div class="icon">
+            <img src="../images/i5.svg" alt="">
+        </div>
+
+    </section>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <!--Smooth Scroll-->
+        <h2 id="contactos">Contáctanos Aquí!</h2>
+
+        <div class="link">
+            <h3 class="link">Lorem</h3>
+            <ul>
+                <!--Prueba red social, NO BORRAR-->
+                <li><a href="https://www.youtube.com/watch?v=mblXkUhPbJI" target="_blank"><i
+                            class="fa-brands fa-youtube fa-shake fa-xl" style="color: #ff0000;"></i></a></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a></li>
+            </ul>
+
+        </div>
+
+        <div class="link">
+            <h3>Lorem</h3>
+            <ul>
+                <li><a href="#">lorem</a></li>
+                <li><a href="https://www.youtube.com/watch?v=rpn66Hv-vZ0" target="_blank"><i
+                            class="fa-brands fa-youtube fa-shake fa-xl" style="color: #ff0000;"></i></a></li>
+                <li><a href="#">lorem</a></li>
+            </ul>
+
+        </div>
+
+        <div class="link">
+            <h3>Lorem</h3>
+            <ul>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+    <script src="/auth.js"></script>
+    <script src="../funcionalidad/script.js"></script>
+
+
+</body>
+
+</html>

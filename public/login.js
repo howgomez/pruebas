@@ -94,7 +94,7 @@ function login() {
                 confirmButtonText: 'Continuar'
             })
                 .then(() => {
-                    window.location.href = "../página Uno/index.html"
+                    window.location.href = "./index.html"
                     loginEmail.value = "";
                     loginPassword.value = "";
 
@@ -127,7 +127,7 @@ function login() {
 function logout() {
     firebase.auth().signOut().then(() => {
         alert("Sesión cerrada");
-        window.location.href = "../página Uno/index.html";
+        window.location.href = "./index.html";
     }).catch((error) => {
         alert("Error: " + error.message);
     });

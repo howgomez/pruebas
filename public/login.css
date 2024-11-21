@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-body{
+body {
     margin: 0;
-    background: url(../images/coffee-header.jpg) no-repeat center top; /*CAMBIAR*/
+    background: url(../images/coffee-header.jpg) no-repeat center top;
+    /*CAMBIAR*/
     background-size: cover;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
@@ -18,14 +19,14 @@ html {
 figure img {
     width: 240px;
     height: 200px;
-    position:absolute;
+    position: absolute;
     cursor: pointer;
     top: -1;
     left: 0;
     margin-top: -25px;
 }
 
-.login-box{
+.login-box {
     width: 380px;
     height: 460px;
     background: #0f0f0f;
@@ -108,18 +109,18 @@ button:hover {
     margin: 0;
 }
 
-.login-box a{
+.login-box a {
     text-decoration: none;
     font-size: 16px;
     line-height: 25px;
     color: rgb(199, 196, 196);
 }
 
-.login-box a:hover{
+.login-box a:hover {
     color: #FFFFFF;
 }
 
-footer{
+footer {
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -130,7 +131,7 @@ footer{
     font-size: 14px;
 }
 
-footer a{
+footer a {
     color: white;
     text-decoration: none;
 }
@@ -144,11 +145,11 @@ footer a{
         max-width: 50px;
     }
 
-    .login-box .icon{
+    .login-box .icon {
         max-width: 60%;
     }
 
-    .login-box h1{
+    .login-box h1 {
         font-size: 20px;
         padding: 50px 0;
     }
@@ -158,16 +159,21 @@ footer a{
     }
 
     .login-box {
-        width: 80%; /* Reduce el ancho en pantallas pequeñas */
-        padding: 15px; /* Menos padding */
+        width: 80%;
+        /* Reduce el ancho en pantallas pequeñas */
+        padding: 15px;
+        /* Menos padding */
     }
 
     button {
-        padding: 8px; /* Botón más pequeño */
+        padding: 8px;
+        /* Botón más pequeño */
     }
-    
-    input[type="text"], input[type="password"] {
-        padding: 8px; /* Campos de entrada más pequeños */
+
+    input[type="text"],
+    input[type="password"] {
+        padding: 8px;
+        /* Campos de entrada más pequeños */
     }
 
     .checkbox-container {
@@ -177,9 +183,10 @@ footer a{
     label {
         padding: 1px;
     }
-    
+
     footer {
-        font-size: 12px; /* Fuente más pequeña en el footer */
+        font-size: 12px;
+        /* Fuente más pequeña en el footer */
         padding: 8px 0;
     }
 

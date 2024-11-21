@@ -70,7 +70,7 @@ function login() {
                 confirmButtonText: 'Continuar'
             })
                 .then(() => {
-                    window.location.href = "/dashboard/index.html"
+                    window.location.href = "index.html"
                 })
 
 
@@ -124,7 +124,7 @@ function logout() {
     firebase.auth().signOut()
         .then(() => {
             console.log("Sesión cerrada correctamente");
-            window.location.href = "../login/login.html"; // Redirigir a la página de login
+            window.location.href = "./login.html"; // Redirigir a la página de login
         })
         .catch((error) => {
             alert("Error al cerrar sesión: " + error.message);
